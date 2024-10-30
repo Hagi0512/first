@@ -3,7 +3,7 @@ const  AC_GAME_OBJECTS = [];
 export class AcGameObject{
     constructor() {
         AC_GAME_OBJECTS.push(this);
-        this.timedalta = 0;
+        this.timedelta = 0;
         this.has_called_start = false;
     }
 
@@ -39,11 +39,11 @@ const step = timestamp => {
             obj.has_called_start = true;
             obj.start();
         } else {
-            obj.timestamp = timestamp - last_timestamp;
+            obj.timedelta = timestamp - last_timestamp;
             obj.update();
         }
-        last_timestamp = timestamp;
     }
+    last_timestamp = timestamp;
     requestAnimationFrame(step)
 }
 requestAnimationFrame(step)

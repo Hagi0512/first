@@ -4,6 +4,8 @@ import PkIndexView from "@/views/pk/PkIndexView.vue";
 import RankListIndexView from "@/views/ranklist/RankListIndexView.vue";
 import RecordIndexView from "@/views/record/RecordIndexView.vue";
 import UserBotIndexView from "@/views/user/bot/UserBotIndexView.vue";
+import TexT from "@/components/TexT.vue";
+import TexT2 from "@/components/TexT2.vue";
 
 const routes = [
   {
@@ -39,6 +41,16 @@ const routes = [
   {
     path: "/:catchAll(.*)",
     redirect: "/404/",
+  },
+  {
+    path: "/text1/",
+    name: "text1",
+    component: TexT,
+  },
+  {
+    path: "/text2/",
+    name: "text2",
+    component: TexT2,
   },
 ]
 

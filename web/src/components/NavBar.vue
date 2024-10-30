@@ -19,6 +19,12 @@
           <li class="nav-item">
             <router-link class="nav-link" active-class="active" :to="{name:'record_index'}">对局列表</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" active-class="active" :to="{name:'text1'}">测试页面1</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" active-class="active" :to="{name:'text2'}">测试页面2</router-link>
+          </li>
         </ul>
           <ul class="navbar-nav">
           <li class="nav-item dropdown">
